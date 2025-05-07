@@ -220,6 +220,7 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     border: 1px solid  var(--pink);
+    border-radius: 12px;
     font-weight: 400;
 }
 
@@ -238,6 +239,7 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    border-radius: 12px;
 }
 
 .btn:hover::after,
@@ -404,8 +406,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .9)), 
+        url('./images/cbonsai_dark.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -497,6 +499,12 @@ body:not(.user-is-tabbing) a:focus {
         flex: 1;
         margin: 0 0 0 10rem;
     }
+
+    .work__image {
+        height: 450px;
+        max-width: 200%;
+        width: auto;    /* preserve aspect ratio */
+    }
 }
 
 @media(max-width: 900px) {
@@ -561,6 +569,10 @@ body:not(.user-is-tabbing) a:focus {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
     }
+}
+
+.about__photo {
+    border-radius: 12px;
 }
 
 /* --------------------------------------- */
