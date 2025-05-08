@@ -623,3 +623,47 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+
+/* --------------------------------------- */
+/* ----- Articles ----- */
+/* --------------------------------------- */
+
+.article__body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: var(--gutter-medium); /* Add spacing between image and text */
+    margin: var(--gutter-huge) 0;
+    align-items: center; /* Center items horizontally */
+}
+
+.article__image-box {
+    width: 100%; /* Allow the image to take full width */
+    text-align: center;
+}
+
+.article__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article__text {
+    width: 100%; /* Allow the text to take full width */
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
+    color: var(--white-1);
+    text-align: left; /* Align text to the left */
+}
+
+.article__text p {
+    margin-bottom: var(--gutter-small);
+}
+
+.article__list {
+    list-style-type: disc;
+    margin: var(--gutter-small) 0;
+    padding-left: var(--gutter-normal);
+    color: var(--white);
+}
